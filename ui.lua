@@ -1,11 +1,11 @@
 -- This User Interface Library is brought to you by Solaris Software.
 --Tweaked by UnknownGamer696
-if game.CoreGui:FindFirstChild("Solaris") then
-    game.CoreGui.Solaris:Destroy()
+if game.CoreGui:FindFirstChild("amongus") then
+    game.CoreGui.amongus:Destroy()
 end
 
 local Solaris = Instance.new("ScreenGui")
-Solaris.Name = math.random(0,100000000)
+Solaris.Name = "amongus"
 if syn and syn.protect_gui then
   syn.protect_gui(Solaris)
   Solaris.Parent = game.CoreGui
