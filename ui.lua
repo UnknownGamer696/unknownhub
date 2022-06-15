@@ -1,20 +1,17 @@
--- This User Interface Library is brought to you by Solaris Software.
---Tweaked by UnknownGamer696
 if game.CoreGui:FindFirstChild("amongus") then
     game.CoreGui.amongus:Destroy()
 end
-
+-- This User Interface Library is brought to you by Solaris Software.
 local Solaris = Instance.new("ScreenGui")
 Solaris.Name = "amongus"
 if syn and syn.protect_gui then
-  syn.protect_gui(Solaris)
-  Solaris.Parent = game.CoreGui
-elseif gethui() then
-  Solaris.Parent = gethui()
+    syn.protect_gui(Solaris)
+    Solaris.Parent = game.CoreGui
+elseif gethui then
+    Solaris.Parent = gethui()
 else
-  Solaris.Parent = game.CoreGui
+    Solaris.Parent = game.CoreGui
 end
-  
 Solaris.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 local NotificationHolder = Instance.new("ScreenGui")
